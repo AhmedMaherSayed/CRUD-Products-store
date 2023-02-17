@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ahmed Maher">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>CRUD</title>
+</head>
+<body class="bg-black text-light">
+    <!-- form start -->
+    <div class="container py-3">
+        <label for="productName" class="form-label mt-3">Product Name:</label>
+        <input id="productName" class="form-control mt-3 w-75" type="text">
+        <p class="alert-danger bg-danger w-75 mt-3 d-none product-reqired">Product Name is required</p>
+        <p class="alert-danger bg-danger w-75 mt-3 d-none product-name-duplicated">Product Name is duplicated</p>
+        <label for="productPrice" class="form-label mt-3">Product Price:</label>
+        <input id="productPrice" class="form-control mt-3 w-75" type="number">
+        <p class="alert-danger bg-danger w-75 mt-3 d-none product-price-reqired">Product Price is required</p>
+        <label for="productCategory" class="form-label mt-3">Product Category:</label>
+        <input id="productCategory" class="form-control mt-3 w-75" type="text">
+        <button onclick="addProduct();" class="btn btn-primary mt-3 d-block addBtn">Add Product</button>
+        <button class="btn btn-warning mt-3 d-none updateInFormBtn">Edit Product</button>
+        <button class="btn btn-danger mt-3 d-none discardInFormBtn">Discard Editing</button>
+    </div>
+    <!-- form end -->
+    <!-- Serach input -->
+    <div class="container">
+        <input id="search" class="w-75 form-control" placeholder="Search for your Product: eg Iphone" type="text">
+    </div>
+    <!-- table start -->
+    <table class="table text-light mt-5 mx-auto">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Category</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+         
+        </tbody>
+      </table>
+
+    <!-- table end -->
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
